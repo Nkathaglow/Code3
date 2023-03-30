@@ -26,7 +26,17 @@ fetch('http://localhost:3000/films')
     // Code for making a buy ticket button
   const returnButton = document.getElementById('return-button');
     returnButton.addEventListener('click', () => {
-      const voteCount = document.getElementById('vote-count');
-     animal.votes++;
-      voteCo.texunttContent = animal.votes;
+      const returnButton = document.getElementById('vote-count');
+     showMovieDetails;
+      returnButton.textContent = showMovieDetails;
     });
+
+    const buyTicketButton = document.getElementById('buy-ticket-button');
+    buyTicketButton.addEventListener('click', () => {
+      const voteCount = document.getElementById('vote-count');
+     showMovieDetails;
+      voteCo.texunttContent = showMovieDetails;
+    });
+
+
+    
