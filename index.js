@@ -14,29 +14,19 @@ fetch('http://localhost:3000/films')
     const filmsDetails = document.getElementById('movieContainer');
     filmsDetails.innerHTML = `
       <h2>${films.title}</h2>
-      <img src="${films.poster}" alt="">
+      <img src="${films.poster}" alt="${films.title}">
       <p>${films.id}</p>
       <p>${films.runtime}</p>
-      <p> id="availableTickets" [${films.capacity}-${films.tickets_sold}]</p>
+      <p>${films.tickets_sold}</p>
         <p>${films.showtime}</p>
         <p>${films.capacity}</p>
+        <p>${films.capacity - films.tickets_sold}</p>
         <p>${films.description}</p>
     `;
  }
     // Code for making a buy ticket button
   const returnButton = document.getElementById('return-button');
     returnButton.addEventListener('click', () => {
-      const returnButton = document.getElementById('vote-count');
-     showMovieDetails;
-      returnButton.textContent = showMovieDetails;
+      location.reload();
     });
 
-    const buyTicketButton = document.getElementById('buy-ticket-button');
-    buyTicketButton.addEventListener('click', () => {
-      const voteCount = document.getElementById('vote-count');
-     showMovieDetails;
-      voteCo.texunttContent = showMovieDetails;
-    });
-
-
-    

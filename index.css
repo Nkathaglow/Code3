@@ -7,18 +7,19 @@
 
 body{
     margin: 0;
-    background-color: #662e68;
+    background-color: #7c1d80;
      font-family: "Poppins", sans-serif;
 }
 
 header{
-    background-color: #4e5572;
+    background-color: #283d8f;
     padding: 1rem;
     display: flex;
     justify-content: flex-end;
 }
 
 .search {
+    color: #000;
 padding: 0.5px 25px;
 border-radius: 30px;
 border: 1px solid #000;
@@ -26,4 +27,19 @@ background-color: transparent;
 font-family: inherit;
 outline: none;
 cursor: pointer;
+}
+
+button {
+    padding: 0.5px 25px;
+    border-radius: 30px;
+    border: 1px solid #000;
+    background-color: transparent;
+    font-family: inherit;
+    outline: none;
+    cursor: pointer; 
+}
+
+.movieContainer {
+    position: absolute;
+    
 }
