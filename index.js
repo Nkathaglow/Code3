@@ -94,11 +94,3 @@ fetch(APIURL)
   .then(data => displayMovies(data))
   .catch(error => console.error(error));
 
-  const clickDelete = (e) => {
-    e.preventDefault();
-    if (e.target.getAttribute("class")) {
-      const movieIdDelete = e.target.getAttribute("class");
-      const id = 
-    }
-    
-  }
