@@ -94,11 +94,11 @@ fetch(APIURL)
   .then(data => displayMovies(data))
   .catch(error => console.error(error));
 
-  const deleteMovie = (id) => {
-    fetch(`http://localhost:3000/films/${Number(id)}`, {
-      method: 'DELETE',
-      headers: {
-        "Content-Type": "application/json"
-      },
-    })
+  const clickDelete = (e) => {
+    e.preventDefault();
+    if (e.target.getAttribute("class")) {
+      const movieIdDelete = e.target.getAttribute("class");
+      const id = 
+    }
+    
   }
