@@ -14,7 +14,10 @@
     </form>
     
   </header>
-  <h1>Movie Titles</h1>
+  <h1>Nkatha
+    <br>
+    Flatdago Movies.
+  </h1>
   <ul id="films-titles"></ul>
   <button id="buy-ticket-main">Buy Ticket</button>
  
@@ -32,23 +35,19 @@
         data.forEach(movie => {
           const li = document.createElement('li');
           li.textContent = movie.title;
-          li.dataset.id = movie.id; // Set the movie ID as a dataset attribute
+          li.dataset.id = movie.id; 
           filmsTitlesList.appendChild(li);
         });
       })
       .catch(error => console.error(error));
-
+    //This is what is displayed on the page basically
     const filmsList = document.getElementById('films-titles');
-
-    // Listen for click events on each movie title in the list
     filmsList.addEventListener('click', e => {
       if (e.target.tagName === 'LI') {
-        const filmId = e.target.dataset.id; // Get the movie ID from the dataset attribute
+        const filmId = e.target.dataset.id; 
         fetch('http://localhost:3000/films/' + filmId)
           .then(response => response.json())
           .then(movie => {
-            // Create and append elements to display movie details
-            
             const main = document.getElementById('main');
             main.innerHTML = `
               <h2>${movie.title}</h2>

@@ -1,45 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
-
-*{
-    box-sizing: border-box;
-    
-}
-
-body{
-    margin: 0;
-    background-color: #7c1d80;
-     font-family: "Poppins", sans-serif;
-}
-
-header{
-    background-color: #283d8f;
-    padding: 1rem;
+body {
+    background-color: #8848b4;
+  }
+  header {
+    background-color: #7e397c;
+    color: white;
     display: flex;
-    justify-content: flex-end;
-}
-
-.search {
-    color: #000;
-padding: 0.5px 25px;
-border-radius: 30px;
-border: 1px solid #000;
-background-color: transparent;
-font-family: inherit;
-outline: none;
-cursor: pointer;
-}
-
-button {
-    padding: 0.5px 25px;
-    border-radius: 30px;
-    border: 1px solid #000;
-    background-color: transparent;
-    font-family: inherit;
-    outline: none;
-    cursor: pointer; 
-}
-
-.movieContainer {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: relative;
+  }
+  
+  .search {
     position: absolute;
-    
-}
+    top: 5px;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+  #films-titles {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 30%;
+  }
+  
+  #main {
+    margin-right: 5%;
+    width: 65%;
+  }
+  
+  #buy-ticket-main {
+    display: block;
+    margin-top: 20px;
+  }
+  
+  h1, h2 {
+    color: #fff;
+    font-weight: normal;
+  }
+  
+  li {
+    cursor: pointer;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #9c91cd;
+    color: #fff;
+  }
+  
+  li:hover {
+    background-color: #555;
+  }
+  
+  #main h2,
+  #main p {
+    color: #fff;
+  }
+  
+  #main img {
+    max-width: 100%;
+    float: right;
+    margin-left: 10px;
+  }
+  
+  .movie-details {
+    overflow: hidden;
+  }
+  
+  .movie-details p {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .movie-details p:last-child {
+    margin-bottom: 0;
+  }
